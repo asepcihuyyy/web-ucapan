@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,9 +16,7 @@
 
     body {
       min-height: 100vh;
-      background: linear-gradient(180deg, #F3F4FF,#E9EBFF
-
-);
+      background: linear-gradient(180deg, #F3F4FF, #E9EBFF);
 
       display: flex;
       align-items: center;
@@ -33,7 +32,7 @@
       max-width: 420px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
       animation: fadeUp 1.2s ease forwards;
     }
 
@@ -76,7 +75,7 @@
     .btn:hover {
       background: #4338ca;
       transform: translateY(-2px);
-      box-shadow: 0 12px 25px rgba(67,56,202,0.45);
+      box-shadow: 0 12px 25px rgba(67, 56, 202, 0.45);
     }
 
     .small {
@@ -92,6 +91,7 @@
         opacity: 0;
         transform: translateY(30px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -99,153 +99,165 @@
     }
 
     @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
     }
 
     @media (max-width: 600px) {
-      h1 { font-size: 22px; }
-      p { font-size: 14px; }
+      h1 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
 
-          /* BUTTON PESAN */
-        .pesan-wrapper {
-            margin-top: 30px;
-          
-            text-align: center;
-            
-        }
+    /* BUTTON PESAN */
+    .pesan-wrapper {
+      margin-top: 30px;
 
-        #btnPesan {
-            padding: 12px 26px;
-            border-radius: 25px;
-            border: none;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            color: rgb(255, 255, 255);
-            background: rgba(64, 17, 175, 0.925);
-            backdrop-filter: blur(6px);
-            transition: all 0.3s ease;
-        }
+      text-align: center;
 
-        #btnPesan:hover {
-            background: rgba(31, 34, 219, 0.76);
-            transform: scale(1.05);
-        }
+    }
 
-        /* POPUP */
-        .popup {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-        }
+    #btnPesan {
+      padding: 12px 26px;
+      border-radius: 25px;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+      background: rgba(64, 17, 175, 0.925);
+      backdrop-filter: blur(6px);
+      transition: all 0.3s ease;
+    }
 
-        .popup-box {
-            background: rgba(177, 166, 166, 0.233);
-            backdrop-filter: blur(8px);
-            padding: 26px;
-            border-radius: 20px;
-            max-width: 200px;
-            width: 90%;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            animation: fadeUp 1s ease;
-            position: relative;
-        }
+    #btnPesan:hover {
+      background: rgba(31, 34, 219, 0.76);
+      transform: scale(1.05);
+    }
 
-        .popup-box p {
-            font-size: 16px;
-            color: #e0e7ff;
-            line-height: 1.6;
-            min-height: 80px;
-        }
+    /* POPUP */
+    .popup {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
 
-        /* CLOSE */
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 14px;
-            font-size: 22px;
-            cursor: pointer;
-        }
+    .popup-box {
+      background: rgba(177, 166, 166, 0.233);
+      backdrop-filter: blur(8px);
+      padding: 26px;
+      border-radius: 20px;
+      max-width: 200px;
+      width: 90%;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      animation: fadeUp 1s ease;
+      position: relative;
+    }
 
-        .btn-kembali {
-            position: fixed;
-            top: 20px;
-            left: 20px;
+    .popup-box p {
+      font-size: 16px;
+      color: #e0e7ff;
+      line-height: 1.6;
+      min-height: 80px;
+    }
 
-            padding: 10px 18px;
-            background: rgba(0, 0, 0, 0.45);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 25px;
-            backdrop-filter: blur(6px);
+    /* CLOSE */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      font-size: 22px;
+      cursor: pointer;
+    }
 
-            transition: all 0.3s ease;
-        }
+    .btn-kembali {
+      position: fixed;
+      top: 20px;
+      left: 20px;
 
-        .btn-kembali:hover {
-            background: rgba(0, 0, 0, 0.65);
-            transform: translateX(-4px);
-        }
+      padding: 10px 18px;
+      background: rgba(0, 0, 0, 0.45);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 25px;
+      backdrop-filter: blur(6px);
 
-        @media (max-width: 600px) {
-            .btn-kembali {
-                top: 12px;
-                left: 12px;
-                font-size: 14px;
-                padding: 8px 14px;
-            }
-        }
+      transition: all 0.3s ease;
+    }
 
-        .btn-kembali {
-            animation: slideIn 0.6s ease;
-        }
+    .btn-kembali:hover {
+      background: rgba(0, 0, 0, 0.65);
+      transform: translateX(-4px);
+    }
+
+    @media (max-width: 600px) {
+      .btn-kembali {
+        top: 12px;
+        left: 12px;
+        font-size: 14px;
+        padding: 8px 14px;
+      }
+    }
+
+    .btn-kembali {
+      animation: slideIn 0.6s ease;
+    }
 
     #balloon-container {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 2;
-}
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 2;
+    }
 
-.balloon {
-  position: absolute;
-  bottom: -60px;
-  font-size: 20px;
-  opacity: 0.8;
-  animation-name: floatUp;
-  animation-timing-function: ease-in;
-}
+    .balloon {
+      position: absolute;
+      bottom: -60px;
+      font-size: 20px;
+      opacity: 0.8;
+      animation-name: floatUp;
+      animation-timing-function: ease-in;
+    }
 
-@keyframes floatUp {
-  0% {
-    transform: translateY(0) translateX(0) scale(0.9);
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.9;
-  }
-  100% {
-    transform: translateY(-120vh) translateX(var(--drift)) scale(1.1);
-    opacity: 0;
-  }
-}
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) translateX(0) scale(0.9);
+        opacity: 0;
+      }
 
+      10% {
+        opacity: 0.9;
+      }
 
+      100% {
+        transform: translateY(-120vh) translateX(var(--drift)) scale(1.1);
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-   <div id="balloon-container"></div>
+  <div id="balloon-container"></div>
 
 
 
@@ -263,97 +275,98 @@
     <p>
       Dan juga...., apa yang kamu doakan semoga tersmogakann,<br />
       di lancarkan rezekinyaa dan juga urusannyaa,<br />
-dan  yang terakhir inii, semogaa selalu berbakti ke kedua orang tua.   </p>
+      dan yang terakhir inii, semogaa selalu berbakti ke kedua orang tua. </p>
 
     <p> <b>Queto kecil dari ku.</b> <br>
       <i>“Hidup nggak selalu mudah,<br />
-       tapi setiap hari adalah kesempatan baru untuk menjadi lebih kuat dan lebih bersyukur.”<br /></i>
+        tapi setiap hari adalah kesempatan baru untuk menjadi lebih kuat dan lebih bersyukur.”<br /></i>
     </p>
 
     <div class="pesan-wrapper">
-  <button id="btnPesan">Pesan</button>
-</div>
+      <button id="btnPesan">Pesan</button>
+    </div>
 
- 
+
     <div class="small">
       — dari anak jawa
     </div>
-  
+
   </div>
- <div class="popup" id="popupPesan">
-  <div class="popup-box">
-    <span class="close" id="closePopup">×</span>
-    <p id="typingText"></p>
+  <div class="popup" id="popupPesan">
+    <div class="popup-box">
+      <span class="close" id="closePopup">×</span>
+      <p id="typingText"></p>
+    </div>
   </div>
-</div>
   <script>
-        const btnPesan = document.getElementById("btnPesan");
-        const popup = document.getElementById("popupPesan");
-        const closePopup = document.getElementById("closePopup");
-        const typingText = document.getElementById("typingText");
+    const btnPesan = document.getElementById("btnPesan");
+    const popup = document.getElementById("popupPesan");
+    const closePopup = document.getElementById("closePopup");
+    const typingText = document.getElementById("typingText");
 
-        const pesan = "Semangat untuk menjalani hari hari berikutnya!.";
+    const pesan = "Semangat terus untuk menjalani hari hari berikutnya!.";
 
-        let index = 0;
+    let index = 0;
 
-        function typeEffect() {
-            if (index < pesan.length) {
-                typingText.innerHTML += pesan.charAt(index);
-                index++;
-                setTimeout(typeEffect, 80);
-            }
-        }
+    function typeEffect() {
+      if (index < pesan.length) {
+        typingText.innerHTML += pesan.charAt(index);
+        index++;
+        setTimeout(typeEffect, 65);
+      }
+    }
 
-        btnPesan.onclick = () => {
-            popup.style.display = "flex";
-            typingText.innerHTML = "";
-            index = 0;
-            typeEffect();
-        };
+    btnPesan.onclick = () => {
+      popup.style.display = "flex";
+      typingText.innerHTML = "";
+      index = 0;
+      typeEffect();
+    };
 
-        closePopup.onclick = () => {
-            popup.style.display = "none";
-        };
+    closePopup.onclick = () => {
+      popup.style.display = "none";
+    };
 
-        window.onclick = (e) => {
-            if (e.target === popup) {
-                popup.style.display = "none";
-            }
-        };
-    </script>
+    window.onclick = (e) => {
+      if (e.target === popup) {
+        popup.style.display = "none";
+      }
+    };
+  </script>
 
-    <script>
-  const container = document.getElementById("balloon-container");
-  const totalBalloons =30; // jumlah balon
+  <script>
+    const container = document.getElementById("balloon-container");
+    const totalBalloons = 30; // jumlah balon
 
-  for (let i = 0; i < totalBalloons; i++) {
-    const balloon = document.createElement("div");
-    balloon.className = "balloon";
-    balloon.innerText = "🎈";
+    for (let i = 0; i < totalBalloons; i++) {
+      const balloon = document.createElement("div");
+      balloon.className = "balloon";
+      balloon.innerText = "🎈";
 
-    // random value
-    const left = Math.random() * 100; // %
-    const size = 16 + Math.random() * 14; // px
-    const duration = 6 + Math.random() * 4; // sec
-    const delay = Math.random() * 2; // sec
-    const drift = (Math.random() * 60 - 30) + "px"; // kiri-kanan
+      // random value
+      const left = Math.random() * 100; // %
+      const size = 16 + Math.random() * 14; // px
+      const duration = 6 + Math.random() * 4; // sec
+      const delay = Math.random() * 2; // sec
+      const drift = (Math.random() * 60 - 30) + "px"; // kiri-kanan
 
-    balloon.style.left = left + "%";
-    balloon.style.fontSize = size + "px";
-    balloon.style.animationDuration = duration + "s";
-    balloon.style.animationDelay = delay + "s";
-    balloon.style.setProperty("--drift", drift);
+      balloon.style.left = left + "%";
+      balloon.style.fontSize = size + "px";
+      balloon.style.animationDuration = duration + "s";
+      balloon.style.animationDelay = delay + "s";
+      balloon.style.setProperty("--drift", drift);
 
-    container.appendChild(balloon);
+      container.appendChild(balloon);
 
-    // hapus setelah animasi selesai
-    setTimeout(() => {
-      balloon.remove();
-    }, (duration + delay) * 1000);
-  }
-</script>
+      // hapus setelah animasi selesai
+      setTimeout(() => {
+        balloon.remove();
+      }, (duration + delay) * 1000);
+    }
+  </script>
 
 
-     <a href="index.html" class="btn-kembali">← Kembali</a>
+  <a href="index.html" class="btn-kembali">← Kembali</a>
 </body>
+
 </html>
